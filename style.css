@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Sora', sans-serif;
+    text-decoration:none;
+    user-select:none;
+}
+
+:root{
+    --orange:#fe5902;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: rgba(0,0,0,0.9);
+    backdrop-filter: blur(10px);
+
+    transition: transform 0.35s ease;
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.4); /* Must have transparency */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px); /* Safari */
+}
+
+/* Hide navbar */
+header.hide{
+    transform: translate(-50%, -100%);
+    transition: 1s ease;
+}
+
+body{
+    padding-top: 80px; /* Prevent content from hiding behind the fixed header */
+}
+.logo-link{
+    display:flex;
+    align-items:center;
+}
+
+.header-logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.header-logo-area img{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+}
+
+.header-text{
+    color:#fff;
+    font-size:23px;
+    font-weight:600;
+}
+
+.menu-bar{
+    display:flex;
+    gap:35px;
+}
+
+.menu-bar a{
+    color:rgba(255,255,255,.8);
+    transition:.3s;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.menu-bar a:hover{
+    color:#fff;
+}
+
+.bc-button{
+    padding:12px 20px;
+    background:linear-gradient(orangered,rgb(141,38,0));
+    color:#fff;
+    border:1px solid #fff;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.bc-button:hover{
+    transform:translateY(-2px) translateX(-2px) ;
+    box-shadow:0 5px 15px rgba(255,69,0,.35);
+}
