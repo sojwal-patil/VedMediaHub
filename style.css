@@ -103,7 +103,7 @@ body{
 
 .bc-button:hover{
     transform:translateY(-2px) translateX(-2px) ;
-    box-shadow:0 5px 15px rgba(255,69,0,.35);
+    box-shadow:0 5px 15px rgba(255,69,0,.100);
 }
 
 .menu-toggle{
@@ -182,7 +182,7 @@ body{
         width: 100%;
     }
 
-    .fa-bars , .fa-xmark{
+    .fa-bars-staggered , .fa-xmark{
         font-size: 20px;
     }
 }

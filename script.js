@@ -6,11 +6,11 @@ menuToggle.addEventListener("click", () => {
     menuBar.classList.toggle("active");
 
     if(menuBar.classList.contains("active")){
-        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.remove("fa-bars-staggered");
         menuIcon.classList.add("fa-xmark");
     }else{
         menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
+        menuIcon.classList.add("fa-bars-staggered");
     }
 });
 
