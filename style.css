@@ -7,6 +7,7 @@
     font-family:'Sora', sans-serif;
     text-decoration:none;
     user-select:none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root{
@@ -103,4 +104,85 @@ body{
 .bc-button:hover{
     transform:translateY(-2px) translateX(-2px) ;
     box-shadow:0 5px 15px rgba(255,69,0,.35);
+}
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+}
+
+.mobile-btn{
+    display: none;
+}
+
+@media (max-width:768px){
+
+    header{
+        justify-content:space-between;
+        padding:0 20px;
+    }
+
+    .header-text{
+        font-size:20px;
+    }
+
+    .desktop-btn{
+        display:block;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .menu-bar{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+
+        background:rgba(0,0,0,.95);
+        backdrop-filter:blur(10px);
+
+        padding:30px 0;
+
+        transform:translateX(-150%);
+        opacity:0;
+        visibility:hidden;
+
+        transition:.4s ease;
+    }
+
+    .menu-bar.active{
+        transform:translateX(0);
+        opacity:1;
+        visibility:visible;
+    }
+
+    .menu-bar a{
+        font-size:18px;
+    }
+
+    .desktop-btn{
+        display: none;
+    }
+
+    .mobile-btn{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mobile-btn .bc-button{
+        width: 100%;
+    }
+
+    .fa-bars , .fa-xmark{
+        font-size: 20px;
+    }
 }
