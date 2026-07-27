@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/96d552640e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../vedmediahub.png" type="image/x-icon">
+    <title>Portfolio | Ved Media Hub</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo-link">
+            <div class="header-logo-area">
+                <img src="../vedmediahub.png" alt="Ved Media Hub Logo">
+                <h1 class="header-text">Ved Media Hub</h1>
+            </div>
+        </a>
+        <nav class="menu-bar">
+            <a href="../index.html">Home</a>
+            <a href="../services/">Services</a>
+            <a href="../portfolio/" aria-current="page" class="active">Portfolio</a>
+            <a href="../about/">About</a>
+            <a href="../contact/">Contact</a>
+
+            <a href="#" class="mobile-btn">
+                <button class="bc-button">Free Consultation</button>
+            </a>
+        </nav>
+
+        <a href="#" class="desktop-btn">
+            <button class="bc-button">Free Consultation</button>
+        </a>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Portfolio</p>
+                <h1>A snapshot of the kind of work that drives momentum.</h1>
+                <p>These example projects show how strategy, design, and paid media can come together to support stronger lead flow and a better brand experience.</p>
+                <div class="hero-actions">
+                    <a href="../services/" class="primary-link">See Services</a>
+                    <a href="../about/" class="secondary-link">Read About Us</a>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <article class="stat-card">
+                    <p class="eyebrow">Results First</p>
+                    <div class="stat-value">03</div>
+                    <p class="stat-copy">Case-study style projects built around clear goals, not just visuals.</p>
+                </article>
+                <article class="stat-card">
+                    <p class="eyebrow">Delivery</p>
+                    <div class="stat-value">24/7</div>
+                    <p class="stat-copy">Marketing systems designed to keep working after launch day.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2 class="section-title">Projects shaped around measurable goals and cleaner user journeys.</h2>
+                <p class="section-copy">Each card shows the business challenge, the type of work delivered, and the result the team was aiming for.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="portfolio-card">
+                    <p class="eyebrow">E-commerce Launch</p>
+                    <h2>Product-led brand rollout with paid traffic support.</h2>
+                    <p class="portfolio-copy">Built a launch page, refined the offer, and paired it with advertising to create a clearer path to purchase.</p>
+                    <ul class="portfolio-meta">
+                        <li>Landing page design</li>
+                        <li>Performance ads</li>
+                        <li>Conversion-focused messaging</li>
+                    </ul>
+                </article>
+                <article class="portfolio-card">
+                    <p class="eyebrow">Local Lead Generation</p>
+                    <h2>Service business website with stronger inquiry flow.</h2>
+                    <p class="portfolio-copy">Improved the structure of the site and clarified the calls to action so qualified visitors could reach the business faster.</p>
+                    <ul class="portfolio-meta">
+                        <li>Website refresh</li>
+                        <li>Call-to-action optimization</li>
+                        <li>Lead tracking setup</li>
+                    </ul>
+                </article>
+                <article class="portfolio-card">
+                    <p class="eyebrow">Brand Refresh</p>
+                    <h2>Visual identity update for a more consistent presence.</h2>
+                    <p class="portfolio-copy">Created cleaner brand assets and content templates so the company could post and present with more consistency.</p>
+                    <ul class="portfolio-meta">
+                        <li>Brand direction</li>
+                        <li>Content templates</li>
+                        <li>Social rollout support</li>
+                    </ul>
+                </article>
+                <article class="portfolio-card">
+                    <p class="eyebrow">Strategy Sprint</p>
+                    <h2>Planning work to align teams before the next growth phase.</h2>
+                    <p class="portfolio-copy">Mapped the customer journey, identified weak points, and created a practical roadmap for the next 90 days.</p>
+                    <ul class="portfolio-meta">
+                        <li>Journey analysis</li>
+                        <li>Messaging audit</li>
+                        <li>90-day action plan</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block instagram-feed-section" id="instagram-feed">
+            <div class="section-heading">
+                <p class="eyebrow">Instagram Videos</p>
+                <h2 class="section-title">Our Recent Work</h2>
+            </div>
+
+            <div class="instagram-feed-grid" id="instagram-feed-grid" aria-live="polite" data-feed-url="./instagram-videos.json"></div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
